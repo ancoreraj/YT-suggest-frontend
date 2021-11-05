@@ -14,7 +14,7 @@ function Suggest() {
     useEffect(() => {
         setTimeout(() => {
             setDone(true)
-        }, 150);
+        }, 1500);
     }, []);
 
     return (
