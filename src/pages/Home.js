@@ -12,7 +12,7 @@ function Home() {
     useEffect(() => {
         setTimeout(() => {
             setDone(true)
-        }, 1500);
+        }, 2500);
     }, []);
 
     const bgUrl = `https://raw.githubusercontent.com/ancoreraj/secret-message/master/public/Final-min.png`
