@@ -17,7 +17,9 @@ function Home() {
 
     const bgUrl = `https://raw.githubusercontent.com/ancoreraj/secret-message/master/public/Final-min.png`
 
-
+    const handleClick = () => {
+        window.reload();
+    }
     return (
         <>
             {!done ? (
@@ -45,9 +47,9 @@ function Home() {
                         <div class="container">
                             <div class="container__item">
 
-                                <form class="form" method="post" action="/subscribe">
+                                <form class="form">
                                     <input type="email" class="form__field" placeholder="Your E-Mail Address" name="email" required />
-                                    <button type="submit" class="btn btn--primary btn--inside uppercase">Subscribe</button>
+                                    <button onClick={handleClick} type="submit" class="btn btn--primary btn--inside uppercase">Subscribe</button>
                                 </form>
 
                             </div>
